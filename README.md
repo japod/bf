@@ -1,5 +1,7 @@
 
-Content of this repository was cloned from (https://github.com/chumer/bf).
+Content of this repository is a copy of (https://github.com/chumer/bf).
+
+Thanks to Christian Humer, who kindly agreed that i could reuse this at MI-RUN seminar in CTU.
 
 # Truffle BF
 
