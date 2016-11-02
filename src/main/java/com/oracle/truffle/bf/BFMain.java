@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.oracle.truffle.bf;
 
 import com.oracle.truffle.bf.BFParser.Operation;
@@ -16,7 +11,7 @@ public class BFMain {
 
 
     public static void main(String[] args) throws IOException {
-        BFImpl[] impls = new BFImpl[]{ new BFV0()};
+        BFImpl[] impls = new BFImpl[]{new BFV1(), new BFV0()};
         String arg = args[0];
         if (arg.equals("-benchmark")) {
             BFBenchmark.benchmark(impls);
@@ -48,6 +43,4 @@ public class BFMain {
     private static Operation[] parse(String file) throws IOException {
         return new BFParser().parse(BFMain.class.getResourceAsStream("/test/" + file));
     }
-
-
 }
