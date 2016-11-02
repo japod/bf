@@ -1,15 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.oracle.truffle.bf;
 
 import com.oracle.truffle.bf.BFParser.Operation;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.StringReader;
 
 /**
  *
@@ -25,7 +19,7 @@ public class BFBenchmark {
         benchmark("bf.bf", impls, ">+>+>+>+>++<[>[<+++>->>>>> +++++[->+++++++<]>[-]< <<<<<]<<]>.!");
     }
 
-    private static final void benchmark(String name, BFImpl[] implementations, String input) throws IOException {
+    private static void benchmark(String name, BFImpl[] implementations, String input) throws IOException {
         Operation[] operations = parse(name);
         ByteArrayInputStream in = new ByteArrayInputStream(input.getBytes("ASCII"));
         for (BFImpl impl : implementations) {
@@ -88,5 +82,4 @@ public class BFBenchmark {
     private static Operation[] parse(String file) throws IOException {
         return new BFParser().parse(BFBenchmark.class.getResourceAsStream("/test/" + file));
     }
-
 }

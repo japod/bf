@@ -1,3 +1,6 @@
+
+Content of this repository was cloned from (https://github.com/chumer/bf).
+
 # Truffle BF
 
 A [Brainfuck](https://esolangs.org/wiki/brainfuck) (short BF) implementation using Truffle for the GraalVM.
@@ -33,7 +36,7 @@ For more information see the [reference](https://esolangs.org/wiki/brainfuck) on
 ## Installation
 
 * Clone BF repository using
-  `git clone https://github.com/chumer/bf`
+  `git clone https://github.com/japod/bf`
 * Download Graal VM Development Kit from 
   http://www.oracle.com/technetwork/oracle-labs/program-languages/downloads
 * Unpack the downloaded `graalvm_*.tar.gz` into `bf/graalvm`. 
