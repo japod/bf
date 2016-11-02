@@ -41,6 +41,7 @@ For more information see the [reference](https://esolangs.org/wiki/brainfuck) on
   `git clone https://github.com/japod/bf`
 * Download Graal VM Development Kit from 
   http://www.oracle.com/technetwork/oracle-labs/program-languages/downloads
+  select GraalVM preview, Development Kit (http://download.oracle.com/otn/utilities_drivers/oracle-labs/graalvm-0.17-linux-x86_64-dk.tar.gz)
 * Unpack the downloaded `graalvm_*.tar.gz` into `bf/graalvm`. 
 * Verify that the file `bf/graalvm/bin/java` exists and is executable
 * Execute `mvn package`
