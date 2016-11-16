@@ -3,6 +3,8 @@ Content of this repository is a copy of (https://github.com/chumer/bf).
 
 Thanks to Christian Humer, who kindly agreed that i could reuse this at MI-RUN seminar in CTU.
 
+See (https://www.youtube.com/watch?v=FJY96_6Y3a4) for a nice Truffle tutorial by Christian Wimmer.
+
 # Truffle BF
 
 A [Brainfuck](https://esolangs.org/wiki/brainfuck) (short BF) implementation using Truffle for the GraalVM.
